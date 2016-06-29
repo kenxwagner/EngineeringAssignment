@@ -9,6 +9,7 @@
         this.span = document.createElement('span');
         this.element.appendChild(this.span);
         this.span.innerText = new Date().toUTCString();
+        this.element.innerHTML += " and that's a good time for Ice Cream!";
     }
 
     start() {
@@ -20,6 +21,11 @@
     }
 
 }
+
+class IceCreamFlavors {
+    flavor: string;
+}
+
 
 window.onload = () => {
     var el = document.getElementById('content');
